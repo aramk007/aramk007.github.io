@@ -1,0 +1,23 @@
+/* Colors are #67A5C8 (blue) and #CB5858 (red) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Update to four equal columns */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .portfolio-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .portfolio-item img {
+    max-width: 100%;
+    height: auto;
+  }
