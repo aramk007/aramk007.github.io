@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navlinks:hover::before {
-    content: '<';
+    content: '{';
     position: absolute;
     color:  #67A5C8;
     font-size: 43px;
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navlinks:hover::after {
-    content: '>';
+    content: '}';
     position: absolute;
     color:  #67A5C8;
     font-size: 43px;
