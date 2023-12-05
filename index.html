@@ -1,9 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META DATA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aram The Coder</title>
+    <!-- STYLESHEET -->
+    <link href="./CSS/index.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/a702f6609c.js" crossorigin="anonymous"></script>
+   <!-- The below will give a red error border box when there are errors  -->
+   <style>
+        .error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
 
 <body>
-  <h1>Aram's Coding Page</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <main>
+        <header>
+            <div class="wrapper">
+                <div class="header">
+                    <i class="fa-solid fa-phone" style="color: #ffffff;"> </i>
+                    <p class="text">(310)424-8341</p>
+                    <form id="loginForm">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required minlength="3">
+                
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+                
+                        <button type="button" id="loginButton">Login</button>
+                        <p class="create-account" style="color:white"> Don't have an account? <a href="#" id="openRegisterModalLink">Create one</a></p>
+                    </form>
+                </div>
+                <div id="registerModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeRegisterModal">&times; </span>
+                        <h2>Create Aram The Coder Account</h2>
+                        <form id="registerForm">
+                            <label for="registerUsername">Username:</label>
+                            <input type="text" id="registerUsername" name="registerUsername" placeholder="Choose a username" required minlength="3">
+                <br>
+                            <label for="registerPassword">Password:</label>
+                            <input type="password" id="registerPassword" name="registerPassword" placeholder="Choose a password" required minlength="6">
+                
+                            <button type="button" id="registerButton">Register</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+
+            <nav class="navbar">
+                <div class="logo"><img class="logo" src="./Images/AramCodeR (8).png"></div>
+                <ul class="nav2">
+                    <li class="navlinks">Home</li>
+                    <li class="navlinks">About Me</li>
+                    <li class="navlinks">Resume</li>
+                    <li class="navlinks">Portfolio</li>
+                    <li class="navlinks">Contact</li>
+                </ul>
+            </nav>
+
+        </header>
+        <hero class="hero">
+
+        </hero>
+        <h1>Website Coming Soon</h1>
+
+
+    </main>
+    <!-- Changes -->
+    <section>
+        <div id="animate">
+            <img src="./Images/hero1.webp" class="animate1">
+        </div>
+
+        <div id="products">
+
+        </div>
+    </section>
+    <script src="./Javascript/registration.js"></script>
+    <script src="./Javascript/login.js"></script>
+    <script src="./Javascript/script.js"> </script>
+    
+    
 </body>
 
 </html>

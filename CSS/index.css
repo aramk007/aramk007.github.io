@@ -1,0 +1,184 @@
+/* Colors are #67A5C8 (blue) and #CB5858 (red) */
+html {
+    font-family: 'Playpen Sans', cursive;
+    background-color: #f3f9fd;
+    
+}
+body {
+    margin: auto;
+}
+.wrapper {
+    display: flex;
+    background-color: #f3f9fd;
+    height: 50px;
+    width: 100%;
+    color: #67A5C8;
+    margin: auto;
+    background-color: #67A5C8;
+    opacity: 1;
+    /* justify-content: space-around; */
+}
+/* ... (previous styles) */
+
+
+/* Lightbox styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dimmed background color */
+}
+
+.modal-content {
+    background-color: #e9f7ff;
+    border: 1px solid #ddd;
+    padding: 50px;
+    margin: 20% auto;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    border-radius: 45%;
+}
+
+.close {
+    position: absolute;
+    top: 0px; /* Adjust the top position */
+    right: 20px; /* Adjust the right position */
+    padding: 20px; /* Increase padding for a bigger close button */
+    font-size: 45px; /* Adjust font size for a bigger close button */
+    cursor: pointer;
+    color: #CB5858;
+}
+.error {
+    border: 1px solid red;
+}
+/* ... (previous styles) */
+
+#loginForm {
+    margin: auto;
+    padding-left: 10px;
+}
+.create-account {
+    margin-left: 15%;
+    margin-top: 0;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+/* margin-left: 50%; */
+}
+.navbar {
+    display: flex;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #67A5C8;
+    justify-content: space-between;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 {
+    color: #67A5C8;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: black;
+}
+.hero img {
+    height: 400px;
+    width: 100%;
+    opacity: 0.3;
+}
+.text {
+    color: white;
+}
+
+.navlinks {
+    display: inline;
+    padding: 12px;
+    transition: background-color .3s linear;
+}
+
+.nav2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navlinks:hover {
+    background-color: #b4e0fa;
+   cursor: pointer;
+
+}
+.animate1 {
+    
+    width: 500px;
+    /* opacity: 0; */
+    /* animation: slidein 4s linear; */
+}
+.animate1:hover {
+    animation: slidein 4s linear 500ms;
+    /* opacity: 1; */
+}
+@keyframes slidein {
+    0% {
+        transform: scale(1) translateX(0vw);
+        /* width: 500px; */
+        /* transform: translateX(0vw); */
+    }
+    100% {
+        transform: scale(1.87) translateX(50vw);
+        /* width: 600px; */
+        /* transform: translateX(50vw); */
+    }
+}
+/* learn indexing for array and dot notation for objects */
+
+#animate {
+    display: flex;
+    justify-content: center;
+}
+
+/* CURLY BRACES HOVER EFFECT */
+.navlinks {
+    position: relative;
+    padding-left: 22px;
+    padding-right: 22px;
+    transition: color 0.3s;
+}
+
+.navlinks:hover::before {
+    content: '<';
+    position: absolute;
+    color:  #67A5C8;
+    font-size: 43px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+    width: 20px;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: black;
+}
+
+.navlinks:hover::after {
+    content: '>';
+    position: absolute;
+    color:  #67A5C8;
+    font-size: 43px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+    width: 20px;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: black;
+}
+
+.navlinks:hover::before {
+    left: -15px;
+}
+
+.navlinks:hover::after {
+    right: -15px;
+}
