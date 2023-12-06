@@ -222,3 +222,54 @@ h1{
 .navlinks:hover::after {
     right: -15px;
 }
+
+  /* Responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+}
+/* Styles for screens smaller than 768px (typical smartphones) */
+@media (max-width: 768px) {
+    /* mobile styles go here */
+}
+
+/* Styles for screens between 768px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* tablet styles go here */
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        display: block;
+        max-width: 50%;
+        top: 0;
+        z-index: 1;
+    }
+    form {
+        resize: 5%;
+    }
+    .text, .fa-solid {
+       font-size: smaller;
+       
+       
+    }
+
+    .navlinks {
+        margin-bottom: 10px; /* Add spacing between links */
+    }

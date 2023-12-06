@@ -21,3 +21,17 @@ body {
     max-width: 100%;
     height: auto;
   }
+  /* Responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+}
+/* Styles for screens smaller than 768px (typical smartphones) */
+@media (max-width: 768px) {
+    /* mobile styles go here */
+}
+
+/* Styles for screens between 768px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* tablet styles go here */
+}
