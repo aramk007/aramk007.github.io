@@ -19,6 +19,7 @@
 .social-wrapper {
   display: inline-flex;
   list-style: none;
+  padding-left: 8.5%;
 }
 
 .social-wrapper .icon {
