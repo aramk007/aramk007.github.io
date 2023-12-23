@@ -115,8 +115,7 @@ transition: box-shadow 0.15s ease,transform 0.15s ease;
   padding-left: 10px;
   position: fixed;
   right: 3%;
-  top: 0.1%;
-
+  top: 0.2%;
 }
 
 .create-account {
@@ -174,7 +173,7 @@ font-size: 2rem;
 }
 
 .hero {
-  display: flex;
+  /* display: flex; */
   height: 300px;
   width: 100%;
   /* background-color: rgba(13, 157, 242, 0.2); */
@@ -187,12 +186,19 @@ font-size: 2rem;
   );
   border-bottom: 1px solid #67a5c8;
 }
-.hero .welcome {
-  display: inline-flex;
-  margin: 0px;
+.welcome {
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 35%;
+  padding-top: 2%;
+  padding-right: 5%;
+}
+.welcome-button{
+  margin-left: 37%;
+}
+.devv-logos{
+  justify-self: center;
+  padding-left: 24%;
 }
 
 .navlinks {
