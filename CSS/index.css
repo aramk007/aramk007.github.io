@@ -9,12 +9,46 @@ html {
 body {
   margin: auto;
 }
+/* Welcome button */
+.welcome-button{
+display: inline-block;
+outline: 0;
+border: 0;
+cursor: pointer;
+will-change: box-shadow,transform;
+background: rgb(254, 128, 1);
+background: linear-gradient(
+  180deg,
+  rgba(254, 128, 1, 0.1) 0%,
+  rgba(13, 157, 242, 0.8) 21%,
+  rgba(0, 212, 255, 1) 100%
+);
+box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+padding: 0 32px;
+border-radius: 6px;
+color: #222121;
+height: 60px;
+width: 250px;
+font-size: 25px;
+text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+.welcome-button:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgba(248, 129, 7, 0.6);
+    transform: translateY(-2px);
+}
+.welcome-button:active{
+    box-shadow: inset 2px 2px 15px rgba(248, 129, 7, 0.2);
+    transform: translateY(2px);
+}
+
 
 .wrapper {
   display: flex;
   height: 55px;
   width: 100%;
-  color: #f8f8f8;
+  /* color: #f8f8f8; */
+  color: rgb(34, 33, 33);
   margin: auto;
   /* background-color: #67A5C8; */
   /* background-color: rgb(248, 129, 7); */
@@ -88,6 +122,12 @@ body {
 .create-account {
   margin-left: 15%;
   margin-top: 0;
+ 
+}
+#openRegisterModalLink{
+    /* text-decoration: none; */
+    color: black;
+    margin-left: 70%;
 }
 
 .header {
@@ -130,7 +170,7 @@ h1 {
 color: rgba(34, 33, 33, 0.6);
 /* -webkit-text-stroke-width: 0.6px;
 -webkit-text-stroke-color: black; */
-font-size: 3rem;
+font-size: 2rem;
 }
 
 .hero {
@@ -232,20 +272,19 @@ img {
 }
 /* footer content */
 .footer-container {
+    display: block;
  height: 100px;
  background: rgb(254, 128, 1);
  background: linear-gradient(
    180deg,
-   rgba(254, 128, 1, 0.4) 0%,
-   rgba(13, 157, 242, 0.6) 21%,
-   rgba(0, 212, 255, 0.5) 100%
+   rgba(254, 128, 1, 0.2) 0%,
+   rgba(13, 157, 242, 0.5) 21%,
+   rgba(0, 212, 255, 0.2) 100%
  );
  border-bottom: 1px solid #67a5c8;
+ border-top: 1px solid #67a5c8;
 }
-.footer-logo {
- 
 
-}
 .footer-list{
     display: flex;
     justify-content: center;
