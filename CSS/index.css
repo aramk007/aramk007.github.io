@@ -10,6 +10,7 @@ body {
   margin: auto;
 }
 /* Welcome button */
+
 .welcome-button{
 display: inline-block;
 outline: 0;
@@ -115,7 +116,7 @@ transition: box-shadow 0.15s ease,transform 0.15s ease;
   padding-left: 10px;
   position: fixed;
   right: 3%;
-  top: 0.2%;
+  top: 0.1%;
 }
 
 .create-account {
@@ -192,6 +193,7 @@ font-size: 2rem;
   justify-content: center;
   padding-top: 2%;
   padding-right: 5%;
+  margin: 0;
 }
 .welcome-button{
   margin-left: 37%;
