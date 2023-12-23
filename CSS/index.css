@@ -43,7 +43,7 @@ transition: box-shadow 0.15s ease,transform 0.15s ease;
 }
 
 
-.wrapper {
+.head-wrapper {
   display: flex;
   height: 55px;
   width: 100%;
